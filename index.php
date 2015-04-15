@@ -7,11 +7,16 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Simple to-do list</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        
     </head>
     <body>
+        <div class="wrap">
+            
+        </div>
+        
         <?php
-        // put your code here testing pushing sourcetree
         ?>
     </body>
 </html>
