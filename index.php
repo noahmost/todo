@@ -9,7 +9,8 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <title>Simple to-do list</title>
         <link rel="stylesheet" type="text/css" href="css/main.css">
-        
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
     </head>
     <body>
         <div class="wrap">
