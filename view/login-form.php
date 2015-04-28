@@ -2,21 +2,22 @@
     require_once(__DIR__ . "/../model/config.php");
 ?>
 
-<h1 class="registerbuttonthing">Login</h1>
+<h1>Login</h1>
 
-<form method="post" action="<?php echo $path . "controller/login-user.php"?>">
-    <div class="registercentering">
+<form method="POST" action="<?php echo $path . "controller/login-user.php"; ?>">
+    <div>
         <label for="username">Username: </label>
-        <!--this allows the user to put text onto the page-->
         <input type="text" name="username"/>
     </div>
-    <div class="registercentering">
-        <!--this allows you to create a password and the text shows up as dots-->
+    
+    <div>
         <label for="password">Password: </label>
-        <input type="password" name="password"
+        <input type="password" name="password"/>
     </div>
-    <div class="registercentering">
-        <!--a submit button that submits your work above-->
-        <button type="submit">Submit: </button>
+    
+    <div>
+        <input type="hidden" name="login" value="login" />
+        <button type="submit">Submit</button>
     </div>
 </form>
+
