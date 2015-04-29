@@ -13,8 +13,8 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <title>Simple to-do list</title>
         <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="css/reset.css">
+<!--        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">-->
     </head>
     <header>
         <button type="button">
@@ -32,7 +32,7 @@ and open the template in the editor.
             <div class ="task-list">
                 <ul>
                     <?php require("includes/connect.php"); 
-                    $mysqli = new mysqli('localhost', 'root', 'root', 'tasks');
+                    $mysqli = new mysqli('localhost', 'root', 'root', 'todo');
                     $query = "SELECT * FROM tasks ORDER BY date ASC, time ASC";
                     if($result = $mysqli->query($query)){
                         $numrows = $result->num_rows;
