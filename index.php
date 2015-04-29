@@ -16,7 +16,7 @@ and open the template in the editor.
 <!--        <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/reset.css">-->
     </head>
-    <header>
+<!--    <header>
         <button type="button">
             <a href="<?php echo $path . "register.php"?>">register</a>
         </button>
@@ -26,8 +26,14 @@ and open the template in the editor.
         <button type="button">
             <a href="<?php echo $path . "controller/logout-user.php"?>">logout</a>
         </button>
-    </header>
-    <body>
+    </header>-->
+    <body class="indexbody">
+        <div class="indexlinks">
+            <a href="/todoapp/index.php">Home|</a>
+            <a href="/todoapp/register.php">Register Here|</a>
+            <a href="/todoapp/login.php">Login here|</a>
+            <a href="/todoapp/controller/logout-user.php">Logout</a>
+        </div>
         <div class="wrap">
             <div class ="task-list">
                 <ul>
